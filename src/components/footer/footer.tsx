@@ -8,16 +8,16 @@ export const Footer = () => {
       <div className='max-w-screen-xl mx-auto flex flex-col gap-6 px-3'>
         <ul className='flex justify-between py-4 px-8 border-b border-blue-900'>
           <li>
-            <Link className='text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Основные сведения</Link>
+            <Link className='relative text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Основные сведения</Link>
           </li>
           <li>
-            <Link className='text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Документы</Link>
+            <Link className='relative text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Документы</Link>
           </li>
           <li>
-            <Link className='text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Противодействие коррупции</Link>
+            <Link className='relative text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Противодействие коррупции</Link>
           </li>
           <li>
-            <Link className='text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Карта сайта</Link>
+            <Link className='relative text-blue-600 transition-colors hover:text-blue-400 hover:after:scale-100  after:content-[""] after:absolute after:left-1/2 after:-bottom-1 after:w-full after:h-[1.5px] after:bg-blue-600 after:-translate-x-1/2 after:scale-0 after:transition-transform after:duration-500' href='/'>Карта сайта</Link>
           </li>
         </ul>
         <div className='flex justify-between'>
