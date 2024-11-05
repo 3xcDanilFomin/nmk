@@ -4,7 +4,6 @@ export { NavigationMenu } from './navigation/navigation-menu';
 export { NavigationLink } from './navigation/navigation-link';
 export { Socials } from './socials/socials';
 export { Banner } from './banner/banner';
-export { GearAnimate } from './gear-animate/gear-animate';
 export { Specialties } from './specialties/specialties';
 export { News } from './news/news';
 export { Partners } from './partners/partners';
