@@ -13,7 +13,7 @@ export const Partners: React.FC = () => {
               {logos.map((logo) => (
                 <li className='inline-flex items-center' key={logo}>
                   <a href='#!'>
-                    <Image className='w-auto h-32 object-cover object-center' src={logo} alt={`Partner ${logo}`} width={350} height={200} />
+                    <Image className='w-auto h-36 object-cover object-center' src={logo} alt={`Partner ${logo}`} width={350} height={200} />
                   </a>
                 </li>
               ))}
