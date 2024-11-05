@@ -1,4 +1,4 @@
-import { Banner, News, Specialties } from '@/components';
+import { Banner, News, Partners, Specialties } from '@/components';
 
 export default function HomePage() {
   return (
@@ -10,6 +10,7 @@ export default function HomePage() {
       <div className='max-w-screen-xl mx-auto px-3 '>
         <News />
       </div>
+      <Partners />
     </main>
   );
 }

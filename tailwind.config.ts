@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         'color-header': 'var(--color-header)',
       },
+      animation: { marquee: 'marquee 60s linear infinite' },
       keyframes: {
         'gear-rotate': {
           '0%': { transform: 'rotate(0deg)' },
@@ -20,6 +21,14 @@ const config: Config = {
         'gear-rotate-reverse': {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
+        },
+        marquee: {
+          '0%': {
+            transform: ' translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
         },
       },
     },
