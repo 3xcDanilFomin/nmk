@@ -1,6 +1,9 @@
-import { ArrowRight, CalendarDays } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRight, CalendarDays } from 'lucide-react';
+
+import { Button } from '@/components';
+import { ROUTES_CONFIG } from '@/config';
 
 export const News: React.FC = () => {
   return (
@@ -12,7 +15,7 @@ export const News: React.FC = () => {
         </div>
       </header>
       <div className='flex gap-4'>
-        <article className='group relative w-full rounded-lg overflow-hidden'>
+        <article className='relative w-full rounded-lg overflow-hidden'>
           <Image
             className='w-full h-full object-cover object-center'
             src='/news-1.webp'
@@ -31,17 +34,17 @@ export const News: React.FC = () => {
             </div>
           </div>
           <Link
-            className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
-            href='/'
+            className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 hover:opacity-100'
+            href={`${ROUTES_CONFIG.NEWS}/${1}`}
           >
-            <div className='group flex items-center gap-1 text-white font-light bg-blue-950 py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-blue-800'>
+            <Button className='group' variant='dark' size='md'>
               <span>Подробнее</span>
-              <ArrowRight className='size-5 stroke-[1.5px]' />
-            </div>
+              <ArrowRight className='size-5 stroke-[1.5px] transition-transform duration-300 group-hover:translate-x-1' />
+            </Button>
           </Link>
         </article>
         <ul className='grid grid-cols-[repeat(2,_280px)] gap-4'>
-          <li className='group rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
+          <li className='rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
             <article className='relative w-full rounded-lg overflow-hidden'>
               <Image
                 className='w-full h-40 object-cover object-center'
@@ -59,17 +62,17 @@ export const News: React.FC = () => {
                 </div>
               </div>
               <Link
-                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
-                href='/'
+                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 hover:opacity-100'
+                href={`${ROUTES_CONFIG.NEWS}/${2}`}
               >
-                <div className='group flex items-center gap-1 text-white font-light bg-blue-950 py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-blue-800'>
+                <Button className='group' variant='dark' size='md'>
                   <span>Подробнее</span>
-                  <ArrowRight className='size-5 stroke-[1.5px]' />
-                </div>
+                  <ArrowRight className='size-5 stroke-[1.5px] transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='group rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
+          <li className='rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
             <article className='relative w-full rounded-lg overflow-hidden'>
               <Image
                 className='w-full h-40 object-cover object-center'
@@ -87,17 +90,17 @@ export const News: React.FC = () => {
                 </div>
               </div>
               <Link
-                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
-                href='/'
+                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 hover:opacity-100'
+                href={`${ROUTES_CONFIG.NEWS}/${3}`}
               >
-                <div className='group flex items-center gap-1 text-white font-light bg-blue-950 py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-blue-800'>
+                <Button className='group' variant='dark' size='md'>
                   <span>Подробнее</span>
-                  <ArrowRight className='size-5 stroke-[1.5px]' />
-                </div>
+                  <ArrowRight className='size-5 stroke-[1.5px] transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='group rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
+          <li className='rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
             <article className='relative w-full rounded-lg overflow-hidden'>
               <Image
                 className='w-full h-40 object-cover object-center'
@@ -115,17 +118,17 @@ export const News: React.FC = () => {
                 </div>
               </div>
               <Link
-                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
-                href='/'
+                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 hover:opacity-100'
+                href={`${ROUTES_CONFIG.NEWS}/${4}`}
               >
-                <div className='group flex items-center gap-1 text-white font-light bg-blue-950 py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-blue-800'>
+                <Button className='group' variant='dark' size='md'>
                   <span>Подробнее</span>
-                  <ArrowRight className='size-5 stroke-[1.5px]' />
-                </div>
+                  <ArrowRight className='size-5 stroke-[1.5px] transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='group rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
+          <li className='rounded-lg shadow-[0_0_6px_rgba(0,0,0,0.2)] overflow-hidden'>
             <article className='relative w-full rounded-lg overflow-hidden'>
               <Image
                 className='w-full h-40 object-cover object-center'
@@ -143,23 +146,20 @@ export const News: React.FC = () => {
                 </div>
               </div>
               <Link
-                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100'
-                href='/'
+                className='absolute inset-0 flex items-center justify-center bg-neutral-900/55 opacity-0 transition-opacity duration-500 hover:opacity-100'
+                href={`${ROUTES_CONFIG.NEWS}/${5}`}
               >
-                <div className='group flex items-center gap-1 text-white font-thin bg-blue-950 py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-blue-800'>
+                <Button className='group' variant='dark' size='md'>
                   <span>Подробнее</span>
-                  <ArrowRight className='size-5 stroke-[1.5px]' />
-                </div>
+                  <ArrowRight className='size-5 stroke-[1.5px] transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
         </ul>
       </div>
-      <Link
-        href='/news'
-        className='w-fit self-center text-white bg-blue-600 px-6 py-3 rounded transition duration-300 hover:bg-blue-700'
-      >
-        Все новости
+      <Link href={ROUTES_CONFIG.NEWS} className='self-center'>
+        <Button>Все новости</Button>
       </Link>
     </section>
   );

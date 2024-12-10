@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         'color-header': 'var(--color-header)',
       },
-      animation: { marquee: 'marquee 60s linear infinite' },
+      animation: { marquee: 'marquee 60s linear infinite',  },
       keyframes: {
         'gear-rotate': {
           '0%': { transform: 'rotate(0deg)' },
@@ -30,6 +30,7 @@ const config: Config = {
             transform: 'translateX(-50%)',
           },
         },
+        
       },
     },
   },

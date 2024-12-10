@@ -1,5 +1,7 @@
-import { CircuitBoard, Cpu, CreditCard, MoveRight, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
+import { CircuitBoard, Cpu, CreditCard, MoveRight, ShieldCheck } from 'lucide-react';
+
+import { Button } from '@/components';
 
 export const Specialties: React.FC = () => {
   return (
@@ -15,7 +17,7 @@ export const Specialties: React.FC = () => {
           </p>
         </header>
         <ul className='grid grid-cols-3 gap-6'>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-[1.02]'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -23,23 +25,22 @@ export const Specialties: React.FC = () => {
                 </div>
                 <h3 className='text-blue-800 font-bold leading-3'>Сетевое и системное администрирование</h3>
               </div>
-              <p className='text-sm text-zinc-600 font-normal line-clamp-5'>
+              <p className='text-sm text-zinc-600 font-normal line-clamp-5 transition-colors'>
                 Специалист по сетевому и системному администрированию обеспечивает бесперебойную работу компьютерной
                 техники, локальной сети и программного обеспечения в компаниях. Он несет ответственность за работу
                 компьютеров, а также за их безопасность. В целом спектр обязанностей этого специалиста достаточно широк
                 – от закупки компьютерной техники до создания сайтов. Также важной обязанностью техника является защита
                 компьютеров от злоумышленников.
               </p>
-              <Link
-                href='/'
-                className='group self-end w-fit flex items-center gap-2 py-1 px-4 rounded-md text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white'
-              >
-                <span className='text-sm'>Подробнее</span>
-                <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+              <Link href='/' className='self-end'>
+                <Button className='group text-blue-900' size='sm' variant='ghost'>
+                  <span className='text-sm'>Подробнее</span>
+                  <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-[1.02]'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -53,16 +54,15 @@ export const Specialties: React.FC = () => {
                 аддитивный процесс послойного создания модели и как он происходит? В современной промышленности это
                 несколько разных процессов, в результате которых моделируется 3d объект.
               </p>
-              <Link
-                href='/'
-                className='group self-end w-fit flex items-center gap-2 py-1 px-4 rounded-md text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white'
-              >
-                <span className='text-sm'>Подробнее</span>
-                <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+              <Link href='/' className='self-end'>
+                <Button className='group' size='sm' variant='ghost'>
+                  <span className='text-sm'>Подробнее</span>
+                  <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-[1.02]'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -76,16 +76,15 @@ export const Specialties: React.FC = () => {
                 и экономики, а также в сервисе и оказании услуг населению, включая торговлю, общественное питание и
                 услуги гостеприимства.
               </p>
-              <Link
-                href='/'
-                className='group self-end w-fit flex items-center gap-2 py-1 px-4 rounded-md text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white'
-              >
-                <span className='text-sm'>Подробнее</span>
-                <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+              <Link href='/' className='self-end'>
+                <Button className='group' size='sm' variant='ghost'>
+                  <span className='text-sm'>Подробнее</span>
+                  <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>
-          <li className='col-span-3 bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-[1.02]'>
+          <li className='col-span-3 bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -100,12 +99,11 @@ export const Specialties: React.FC = () => {
                 монтажу, наладке, настройке, ремонту, техническому обслуживанию эксплуатации приборов и инструментов для
                 измерения, контроля, испытания и регулирования технологических процессов и производств.
               </p>
-              <Link
-                href='/'
-                className='group self-end w-fit flex items-center gap-2 py-1 px-4 rounded-md text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white'
-              >
-                <span className='text-sm'>Подробнее</span>
-                <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+              <Link href='/' className='self-end'>
+                <Button className='group' size='sm' variant='ghost'>
+                  <span className='text-sm'>Подробнее</span>
+                  <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
+                </Button>
               </Link>
             </article>
           </li>

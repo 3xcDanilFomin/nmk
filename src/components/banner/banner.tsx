@@ -1,7 +1,10 @@
 import Image from 'next/image';
-import { GearIcon } from './icons/gear-icon';
 import Link from 'next/link';
 import { ArrowRight, Play } from 'lucide-react';
+
+import { Button } from '@/components';
+import { ROUTES_CONFIG } from '@/config';
+import { GearIcon } from './icons/gear-icon';
 import { ArrowIcon } from './icons/arrow-icon';
 
 export const Banner = () => {
@@ -26,15 +29,17 @@ export const Banner = () => {
       <div className='flex justify-between gap-12'>
         <div className='relative w-full'>
           <Image
-            className='w-full h-auto rounded-md'
+            className='w-full h-full rounded-md'
             unoptimized
             src='/banner-image-1.webp'
             alt='banner'
             width={650}
-            height={500}
+            height={408}
           />
-          <div className='absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 p-2.5 bg-blue-600 border-[12px] border-white shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-full cursor-pointer'>
-            <Play className='w-5 h-5 fill-white stroke-none' />
+          <div className='absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 border-[12px] border-white shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-full'>
+            <Button className='p-2.5 rounded-full' size='none'>
+              <Play className='w-5 h-5 fill-white stroke-none' />
+            </Button>
           </div>
         </div>
         <div className='relative w-2/3 flex flex-col gap-4'>
@@ -52,12 +57,11 @@ export const Banner = () => {
             признание в сфере образования, что обеспечивает качественное обучение и индивидуальный подход к каждому
             студенту. Выбирая нас, вы выбираете надежный путь к карьере в машиностроительной отрасли!
           </p>
-          <Link
-            href='/history'
-            className='group w-fit flex items-center gap-2 text-white bg-blue-600 px-6 py-3 rounded transition duration-300 hover:bg-blue-700'
-          >
-            <span>Наша история</span>
-            <ArrowRight className='w-5 h-5 stroke-current transition-transform group-hover:translate-x-1' />
+          <Link href={ROUTES_CONFIG.COLLEGE.HISTORY}>
+            <Button className='group'>
+              <span>Наша история</span>
+              <ArrowRight className='w-5 h-5 stroke-current transition-transform group-hover:translate-x-1' />
+            </Button>
           </Link>
         </div>
       </div>

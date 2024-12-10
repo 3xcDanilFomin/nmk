@@ -1,5 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-export const Logo = () => {
-  return <Link href="/">Логотип</Link>;
+import { LogoIcon } from './logo-icon';
+
+interface ILogoProps {
+  variant?: 'light' | 'dark';
+}
+
+export const Logo: React.FC<ILogoProps> = ({ variant }) => {
+  return (
+    <Link href='/'>
+      <LogoIcon variant={variant} />
+    </Link>
+  );
 };

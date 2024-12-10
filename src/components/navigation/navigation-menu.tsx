@@ -1,14 +1,12 @@
 import { navigationLinks } from '@/assets/data/navigation-links';
-import { NavigationLink } from '@/components';
+import { Dropdown } from '../ui/dropdown';
 
 export const NavigationMenu = () => {
   return (
-    <nav>
-      <ul className='flex items-center gap-2'>
-        {navigationLinks.map((link) => (
-          <NavigationLink key={link.id} label={link.label} path={link.path} />
-        ))}
-      </ul>
+    <nav className='flex items-center gap-3'>
+      {navigationLinks.map((item) => (
+        <Dropdown key={item.id} label={item.label} links={item.links} />
+      ))}
     </nav>
   );
 };

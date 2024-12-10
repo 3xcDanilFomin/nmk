@@ -1,4 +1,4 @@
-import { Logo, NavigationMenu, Socials } from '@/components';
+import { Button, Logo, NavigationMenu, Socials } from '@/components';
 import Link from 'next/link';
 
 export const Header = () => {
@@ -55,14 +55,11 @@ export const Header = () => {
           </a>
           <Socials variant='light' />
         </div>
-        <div className='w-full flex items-center justify-between p-6 rounded-md bg-white shadow-lg -mb-10'>
+        <div className='w-full flex items-center justify-between py-2 px-6 rounded-md bg-white shadow-lg -mb-10'>
           <Logo />
           <NavigationMenu />
-          <Link
-            href='/contacts'
-            className='text-white bg-blue-600 px-6 py-3 rounded transition duration-300 hover:bg-blue-700'
-          >
-            Контакты
+          <Link href='/contacts'>
+            <Button>Контакты</Button>
           </Link>
         </div>
       </div>
