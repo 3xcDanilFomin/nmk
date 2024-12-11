@@ -32,8 +32,8 @@ export const Specialties: React.FC = () => {
                 – от закупки компьютерной техники до создания сайтов. Также важной обязанностью техника является защита
                 компьютеров от злоумышленников.
               </p>
-              <Link href='/' className='self-end'>
-                <Button className='group text-blue-900' size='sm' variant='ghost'>
+              <Link href='/specialties/1' className='self-end'>
+                <Button className='group' size='sm' variant='ghost'>
                   <span className='text-sm'>Подробнее</span>
                   <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
                 </Button>
@@ -54,7 +54,7 @@ export const Specialties: React.FC = () => {
                 аддитивный процесс послойного создания модели и как он происходит? В современной промышленности это
                 несколько разных процессов, в результате которых моделируется 3d объект.
               </p>
-              <Link href='/' className='self-end'>
+              <Link href='/specialties/2' className='self-end'>
                 <Button className='group' size='sm' variant='ghost'>
                   <span className='text-sm'>Подробнее</span>
                   <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
@@ -76,7 +76,7 @@ export const Specialties: React.FC = () => {
                 и экономики, а также в сервисе и оказании услуг населению, включая торговлю, общественное питание и
                 услуги гостеприимства.
               </p>
-              <Link href='/' className='self-end'>
+              <Link href='/specialties/3' className='self-end'>
                 <Button className='group' size='sm' variant='ghost'>
                   <span className='text-sm'>Подробнее</span>
                   <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />
@@ -99,7 +99,7 @@ export const Specialties: React.FC = () => {
                 монтажу, наладке, настройке, ремонту, техническому обслуживанию эксплуатации приборов и инструментов для
                 измерения, контроля, испытания и регулирования технологических процессов и производств.
               </p>
-              <Link href='/' className='self-end'>
+              <Link href='/specialties/4' className='self-end'>
                 <Button className='group' size='sm' variant='ghost'>
                   <span className='text-sm'>Подробнее</span>
                   <MoveRight className='size-5 stroke-[1.5px] stroke-current transition-transform duration-300 group-hover:translate-x-1' />

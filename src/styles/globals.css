@@ -35,3 +35,21 @@ body {
     transform: scale(2.5);
   }
 }
+
+.tab-content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab-content.fade-in {
+  opacity: 1;
+  height: auto; /* или установите фиксированную высоту, если это необходимо */
+}
+
+.tab-content.fade-out {
+  opacity: 0;
+  height: 0;
+}
+

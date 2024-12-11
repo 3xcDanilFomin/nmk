@@ -56,7 +56,7 @@ export const Dropdown: React.FC<IDropdownProps> = (props) => {
           {links.map((link) => (
             <li key={link.id}>
               <Link
-                className='text-sm text-zinc-700 py-1 px-2 rounded leading-none hover:bg-blue-500 hover:text-white'
+                className='w-full block text-sm text-zinc-700 py-1 px-2 rounded leading-none hover:bg-blue-500 hover:text-white'
                 href={link.path}
               >
                 {link.label}

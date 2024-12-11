@@ -27,7 +27,7 @@ export const Slider: React.FC<ISliderProps> = (props) => {
 
   return (
     <div
-      className='relative w-full h-full rounded-lg bg-blue-50'
+      className='relative w-full h-full flex items-end rounded-lg bg-blue-50'
       onMouseEnter={clearTimer}
       onMouseLeave={startAutoPlay}
     >

@@ -11,3 +11,5 @@ export { Button } from './ui/button';
 export { Dropdown } from './ui/dropdown';
 export { Title } from './ui/title';
 export { Slider } from './ui/slider/slider';
+export { PublicationDate } from './ui/publication-date';
+export { Tabs } from './ui/tabs/tabs';
