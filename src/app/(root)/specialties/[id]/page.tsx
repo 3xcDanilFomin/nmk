@@ -2,6 +2,7 @@ import { Slider, Tabs } from "@/components";
 
 export default  async function SpecialtieDetailsPage({ params }: { params: Promise<{ id: string }> }) {
     const id = (await params).id;
+    console.log(id);
   return (
     <main className='flex flex-col gap-24 py-12'>
       <div className='w-full flex flex-col gap-12 max-w-screen-xl mx-auto px-3 '>
