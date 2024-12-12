@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 interface ICollegeHistoryData {
   title: string;
   paragraphs: { id: string; content: React.ReactNode }[];
