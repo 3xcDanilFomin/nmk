@@ -9,10 +9,12 @@ const items: { id: number; label: string; content: React.ReactNode[] }[] = [
     id: 1,
     label: 'Деятельность',
     content: [
-      <span className='text-zinc-700'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem aperiam quos? Debitis nobis error
-        neque! Neque cupiditate deleniti, ea, at vel consequatur error velit, molestiae assumenda maxime sed debitis!
-      </span>,
+      <>
+        <span className='text-zinc-700'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem aperiam quos? Debitis nobis error
+          neque! Neque cupiditate deleniti, ea, at vel consequatur error velit, molestiae assumenda maxime sed debitis!
+        </span>
+      </>,
     ],
   },
   {
