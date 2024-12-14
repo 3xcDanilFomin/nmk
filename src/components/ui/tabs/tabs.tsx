@@ -66,7 +66,9 @@ export const Tabs: React.FC = () => {
         {items.map((item, index) => (
           <ul
             key={item.id}
-            className={`flex flex-col gap-4 opacity-0 max-h-0  overflow-hidden transition-opacity duration-500 ${currentTab === index ? 'opacity-100 max-h-[650px]' : 'opacity-0 max-h-0'}`}
+            className={`flex flex-col gap-4 opacity-0 max-h-0  overflow-hidden transition-opacity duration-500 ${
+              currentTab === index ? 'opacity-100 max-h-[650px]' : 'opacity-0 max-h-0'
+            }`}
           >
             {item.content.map((el, contentIndex) => (
               <li key={contentIndex} className='flex items-center gap-2'>

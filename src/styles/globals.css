@@ -36,6 +36,70 @@ body {
   }
 }
 
+.gallery-link-item {
+  @apply relative rounded-lg overflow-hidden shadow shadow-zinc-700;
+}
+
+.gallery-link-item:nth-child(8n + 1) {
+  @apply col-span-2;
+}
+
+.gallery-link-item:nth-child(8n + 2) {
+  @apply col-span-1;
+}
+
+.gallery-link-item:nth-child(8n + 3) {
+  @apply row-span-1;
+}
+
+.gallery-link-item:nth-child(8n + 4) {
+  @apply row-span-1;
+}
+
+.gallery-link-item:nth-child(8n + 5) {
+  @apply col-span-2;
+}
+
+.gallery-link-item:nth-child(8n + 6) {
+  @apply col-span-1;
+}
+
+.gallery-link-item:nth-child(8n + 7) {
+  @apply col-span-2;
+}
+
+.gallery-link-item:nth-child(8n + 8) {
+  @apply col-span-2;
+}
+
+.gallery-image {
+  @apply w-full h-full relative overflow-hidden rounded-md;
+}
+
+.gallery-image:nth-child(6n + 1) {
+  @apply row-span-1;
+}
+
+.gallery-image:nth-child(6n + 2) {
+  @apply row-span-2;
+}
+
+.gallery-image:nth-child(6n + 3) {
+  @apply row-span-1;
+}
+
+.gallery-image:nth-child(6n + 4) {
+  @apply row-span-2;
+}
+
+.gallery-image:nth-child(6n + 5) {
+  @apply row-span-2;
+}
+
+.gallery-image:nth-child(6n + 6) {
+  @apply row-span-1;
+}
+
 .tab-content {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -52,4 +116,3 @@ body {
   opacity: 0;
   height: 0;
 }
-

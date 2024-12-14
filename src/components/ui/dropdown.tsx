@@ -54,7 +54,7 @@ export const Dropdown: React.FC<IDropdownProps> = (props) => {
       >
         <ul className='w-max  flex flex-col gap-2 p-2 bg-white '>
           {links.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} onClick={() => setIsOpen(false)}>
               <Link
                 className='w-full block text-sm text-zinc-700 py-1 px-2 rounded leading-none hover:bg-blue-500 hover:text-white'
                 href={link.path}

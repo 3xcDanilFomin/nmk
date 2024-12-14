@@ -34,4 +34,14 @@ export const ROUTES_CONFIG: IRouteConfig = {
     COLLECTIVE_AGREEMENT: '/teachers/collective-agreement',
   },
   NEWS: '/news',
+  PHOTO_GALLERY: {
+    ACHIEVEMENTS: '/college/photo-gallery/achievements',
+    COLLEGE: '/college/photo-gallery/college',
+    DINING_ROOM: '/college/photo-gallery/dining-room',
+    DORMITORY: '/college/photo-gallery/dormitory',
+    EVENTS: '/college/photo-gallery/events',
+    MUSEUM: '/college/photo-gallery/museum',
+    SPORT: '/college/photo-gallery/sport',
+    WORKSHOPS: '/college/photo-gallery/workshops',
+  },
 };

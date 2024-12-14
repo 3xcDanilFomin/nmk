@@ -13,3 +13,4 @@ export { Title } from './ui/title';
 export { Slider } from './ui/slider/slider';
 export { PublicationDate } from './ui/publication-date';
 export { Tabs } from './ui/tabs/tabs';
+export { Modal } from './ui/modal/modal';

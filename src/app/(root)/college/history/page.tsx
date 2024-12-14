@@ -1,3 +1,6 @@
+import { Title } from '@/components';
+import { Fragment } from 'react';
+
 interface ICollegeHistoryData {
   title: string;
   paragraphs: { id: string; content: React.ReactNode }[];
@@ -284,12 +287,10 @@ export default function CollegeHistoryPage() {
   return (
     <main className='flex flex-col gap-24 py-12'>
       <section className='flex flex-col gap-12 max-w-screen-xl mx-auto px-3'>
-        <h1 className='text-center text-2xl'>{collegeHistoryData.title}</h1>
-        <article className='flex flex-col gap-6'>
+        <Title label={collegeHistoryData.title} />
+        <article className='flex flex-col gap-6 text-zinc-700 indent-12'>
           {collegeHistoryData.paragraphs.map((paragraph) => (
-            <p className='indent-12 text-zinc-700' key={paragraph.id}>
-              {paragraph.content}
-            </p>
+            <Fragment key={paragraph.id}>{paragraph.content}</Fragment>
           ))}
         </article>
       </section>

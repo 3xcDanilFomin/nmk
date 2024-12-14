@@ -35,6 +35,17 @@ export interface ITeachersRoutes {
   COLLECTIVE_AGREEMENT: string;
 }
 
+export interface IPhotoGallery {
+  COLLEGE: string;
+  WORKSHOPS: string;
+  DORMITORY: string;
+  MUSEUM: string;
+  SPORT: string;
+  EVENTS: string;
+  ACHIEVEMENTS: string;
+  DINING_ROOM: string;
+}
+
 export type TNewsRout = string;
 
 export interface IRouteConfig {
@@ -44,4 +55,5 @@ export interface IRouteConfig {
   ACTIVITIES: IActivitiesRoutes;
   TEACHERS: ITeachersRoutes;
   NEWS: TNewsRout;
+  PHOTO_GALLERY: IPhotoGallery;
 }
