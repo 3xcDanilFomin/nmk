@@ -15,7 +15,7 @@ export default function CollegePhotoGalleryPage() {
               <Link className='group relative block w-full h-full' href={link.urlPath}>
                 <figure className='w-full h-full'>
                   <Image
-                    className='relative -z-10 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110'
+                    className='relative -z-10 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105'
                     src={link.imagePath}
                     alt={link.alt}
                     width={360}

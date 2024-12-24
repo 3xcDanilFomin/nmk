@@ -74,7 +74,7 @@ export default async function PhotoGallerySlugPage({ params }: { params: Promise
           {images.map((image) => (
             <li key={image.id} className='group gallery-image cursor-pointer'>
               <Image
-                className='w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110'
+                className='w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105'
                 src={image.urlPath}
                 alt={image.alt}
                 width={360}

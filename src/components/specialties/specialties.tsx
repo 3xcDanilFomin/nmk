@@ -17,7 +17,7 @@ export const Specialties: React.FC = () => {
           </p>
         </header>
         <ul className='grid grid-cols-3 gap-6'>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -40,7 +40,7 @@ export const Specialties: React.FC = () => {
               </Link>
             </article>
           </li>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -62,7 +62,7 @@ export const Specialties: React.FC = () => {
               </Link>
             </article>
           </li>
-          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
+          <li className='bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>
@@ -84,7 +84,7 @@ export const Specialties: React.FC = () => {
               </Link>
             </article>
           </li>
-          <li className='col-span-3 bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-95'>
+          <li className='col-span-3 bg-white py-5 px-4 rounded-lg  shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:scale-95'>
             <article className='h-full flex flex-col gap-4 justify-between'>
               <div className='flex items-center gap-3'>
                 <div className='p-0.5 bg-blue-300 rounded'>

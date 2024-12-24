@@ -13,4 +13,6 @@ export { Title } from './ui/title';
 export { Slider } from './ui/slider/slider';
 export { PublicationDate } from './ui/publication-date';
 export { Tabs } from './ui/tabs/tabs';
+export { DocumentList } from './documents/document-list';
+export { FieldSearch } from './ui/field-search';
 export { Modal } from './ui/modal/modal';
