@@ -10,6 +10,7 @@ export const Logo: React.FC<ILogoProps> = ({ variant }) => {
   return (
     <Link href='/'>
       <LogoIcon variant={variant} />
+
     </Link>
   );
 };

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { AtSign, Circle, MapPin, Phone } from 'lucide-react';
 
-import { Title } from '@/components';
+import { DocumentList, Title } from '@/components';
 
 export default function AdmissionsPage() {
   return (
@@ -307,6 +307,9 @@ export default function AdmissionsPage() {
             сайте.
           </p>
         </div>
+      </section>
+      <section className='flex flex-col gap-6 w-full max-w-screen-xl mx-auto px-3'>
+        <DocumentList label='Документы' />
       </section>
     </main>
   );
